@@ -1,2 +1,3 @@
-# hack-pds-skeleton
-Hack Package Development Standards
+# Hack Development Skeleton
+
+WIP
