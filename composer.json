@@ -13,7 +13,7 @@
     "facebook/hh-clilib": "^2.1.0"
   },
   "require-dev": {
-    "hhvm/hacktest": "^1.4",
+    "hhvm/hacktest": "^1.5",
     "facebook/fbexpect": "^2.5.2",
     "hhvm/hhast": "^4.0.0"
   }
