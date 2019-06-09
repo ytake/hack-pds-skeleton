@@ -13,4 +13,5 @@ services:
     tty: true
     container_name: hhvm
     ports:
+      - 18080:18080
       - 19001:19001
