@@ -1,0 +1,24 @@
+sudo: required
+language: generic
+services:
+- docker
+env:
+  matrix:
+  - HHVM_VERSION=4.0.0
+  - HHVM_VERSION=4.0.1
+  - HHVM_VERSION=4.0.2
+  - HHVM_VERSION=4.0.3
+  - HHVM_VERSION=4.0.4
+  - HHVM_VERSION=4.1.0
+  - HHVM_VERSION=4.2.0
+  - HHVM_VERSION=4.3.0
+  - HHVM_VERSION=4.4.0
+  - HHVM_VERSION=4.5.0
+  - HHVM_VERSION=4.6.0
+  - HHVM_VERSION=4.7.0
+  - HHVM_VERSION=4.8.0
+  - HHVM_VERSION=latest
+install:
+  - docker pull hhvm/hhvm:$HHVM_VERSION
+script:
+  - docker run --rm -w /var/source -v $(pwd):/var/source hhvm/hhvm:$HHVM_VERSION ./.travis.sh
