@@ -4,7 +4,7 @@ services:
     build:
       context: ./docker/hhvm
     volumes:
-      - .:/var/www
+      - ./src:/var/www
       - ./docker/hhvm/hh.conf:/etc/hh.conf
       - ./docker/hhvm/php.ini:/etc/hhvm/php.ini
       - ./docker/hhvm/server.ini:/etc/hhvm/server.ini
